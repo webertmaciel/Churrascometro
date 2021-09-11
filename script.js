@@ -11,12 +11,14 @@ function calcular(){
     let adultos = inputAdultos.value;
     let criancas = inputCriancas.value;
     let duracao = inputDuracao.value;
-
     let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
     let qdtTotalCerveja = cervejaPP(duracao) * adultos;
     let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao)/2 * criancas);
 
-    resultado.innerHTML = `<p> ${qdtTotalCarne}g de Carne </p>`
+    console.log(qdtTotalCarne, qdtTotalCerveja)
+    resultado.innerHTML = `<p>${qdtTotalCarne}g de Carne </p>`;
+    resultado.innerHTML = `<p>${qdtTotalCerveja}ml de Cerveja </p>`;
+    resultado.innerHTML = `<p>${qdtTotalBebidas}ml de Bebidas </p>`;
 
 }
 function carnePP(duracao){
