@@ -9,6 +9,10 @@ h1{
     font-family: 'Lobster', cursive;
     text-align: center;
 }
+.icon{
+    width: 22px;
+    float: left;
+}
 .wallp{
     width: 100vw;
     height: 100vh;
@@ -43,22 +47,15 @@ button{
     position: relative; left: 100px;
 }
 #resultado1{
-    box-sizing: border-box;
-    align-items: center;
     font-family: 'Lobster', cursive;
     font-size: 20px;
     
 }
 #resultado2{
-    box-sizing: border-box;
-    align-items: center;
     font-family: 'Lobster', cursive;
-    font-size: 20px;
-    
+    font-size: 20px; 
 }
 #resultado3{
-    box-sizing: border-box;
-    align-items: center;
     font-family: 'Lobster', cursive;
     font-size: 20px;
     
@@ -74,5 +71,5 @@ button{
     body{
             background-color: gray;
             background-image: url(/image/2269580.jpg);
-            background-size: 1400pt ;
+            background-size: 1400pt ;}
 }

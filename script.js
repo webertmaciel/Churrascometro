@@ -18,9 +18,9 @@ function calcular(){
     let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao)/2 * criancas);
 
     console.log(qdtTotalCarne, qdtTotalCerveja)
-    resultado1.innerHTML = `<p>${qdtTotalCarne/1000}kg de Carne </p>`;
-    resultado2.innerHTML = `<p>${Math.ceil(qdtTotalCerveja/355)} latas de Cerveja </p>`;
-    resultado3.innerHTML = `<p>${Math.ceil(qdtTotalBebidas/2000)} Garrafas de Bebidas </p>`;
+    resultado1.innerHTML = `<div id="resultado1"><img src="/icons/silhueta-de-fatia-de-carne.png" class="icon" ><p> ${qdtTotalCarne/1000}kg de Carne </p></div>`;
+    resultado2.innerHTML = `<div id="resultado2"><img src="/icons/cerveja.png" class="icon" ><p> ${Math.ceil(qdtTotalCerveja/355)} latas de Cerveja </p></div>`;
+    resultado3.innerHTML = `<div id="resultado3"><img src="/icons/refrigerante.png" class="icon" ><p> ${Math.ceil(qdtTotalBebidas/2000)} Garrafas de Bebidas</div></p>`;
 
 }
 function carnePP(duracao){
